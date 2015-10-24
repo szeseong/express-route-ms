@@ -23,8 +23,17 @@ Run
 
 enter ``` http://localhost:8080/echo?echo=testecho ``` into browser
 
+Result
+
+```
+{"echo":"testecho","id":1}
+```
 should see the echo (json) from spring microservice (echo)
 
 enter ``` http://localhost:3000/microservice/echo?echo=testroute ``` into browser
+
+```
+{"echo":"testroute","id":2}
+```
 
 should see the echo (json) from spring microservice (echo) (this means the nodejs manage to route the request to  microservice (echo))
